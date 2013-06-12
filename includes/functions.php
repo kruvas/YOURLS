@@ -24,6 +24,10 @@ function yourls_get_shorturl_charset() {
 			case 64: // just because some people get this wrong in their config.php
 				$charset = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 				break;
+			case 80:
+				$charset = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-._~!$&\'()*+,;=:@/';
+				break;
+
 		}
 	}
 	
