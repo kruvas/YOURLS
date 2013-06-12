@@ -41,6 +41,7 @@ function yourls_get_shorturl_charset() {
  */
 function yourls_make_regexp_pattern( $string ) {
 	$pattern = preg_quote( $string, '-' ); // add - as an escaped characters -- this is fixed in PHP 5.3
+	add new shortening method/dictionary
 	// TODO: replace char sequences by smart sequences such as 0-9, a-z, A-Z ... ?
 	return $pattern;
 }
