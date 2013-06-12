@@ -64,7 +64,16 @@ $yourls_user_passwords = array(
  ** URL Shortening settings
  */
 
-/** URL shortening method: 36 or 62 */
+/** URL shortening method: 36 or 62 or 80*/
+/*
+36:
+'0123456789abcdefghijklmnopqrstuvwxyz'
+62:
+'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+80:
+0–9, a–z, A–Z, -, ., _, ~, !, $, &, ', (, ), *, +, ,, ;, =, :, @
+'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-._~!$&'()*+,;=:@/'
+*/
 define( 'YOURLS_URL_CONVERT', 36 );
 /*
  * 36: generates all lowercase keywords (ie: 13jkm)
